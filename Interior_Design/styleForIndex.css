@@ -94,7 +94,6 @@ top: 20%;
             }
             .tracking-in-expand-fwd {
                 text-align: center;
-                border: 2px solid green;
                 width: 90%;
             }
         }
@@ -134,7 +133,6 @@ padding-right: 3rem; */
         .tracking-in-expand-fwd
         {
             text-align: center;
-            /* border: 2px solid green; */
             width: 20%;
         }
         .tracking-in-expand-fwd:hover
@@ -184,13 +182,18 @@ padding-right: 3rem; */
                 /* font-size: 1.5rem; */
                 padding: 0;
             }
+           
 
         }
 
+        @media only screen and ( max-height:1600px) {
 
 
-
-
+        .body_below_nav
+        {
+            height: 65vh;
+        }
+    }
   .kenburns-top
   {
       padding-top:5%;
