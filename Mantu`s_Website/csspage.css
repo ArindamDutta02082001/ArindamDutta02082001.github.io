@@ -1,0 +1,491 @@
+
+/* CSS Reset */
+*
+{
+    margin: 0px;
+    padding: 0px;
+ 
+}
+
+
+
+
+html{
+    font-size: 20px;
+}
+
+
+/* Navigation abar */
+
+
+
+#navbar{
+/* border: 2px solid red; */
+position: relative;
+display: flex;
+justify-content: center;  
+font-family: 'Merriweather', serif;
+height: 595px;
+
+}
+#n
+{
+    box-shadow: 3px 3px 3px yellow;
+      border-radius: 40px ;
+    position: fixed;
+    z-index: 100;
+   top: 40px;
+    background-color: red;
+    color: white;
+     min-height: 70px;
+border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+   align-items: center;
+   flex-wrap: wrap;
+    justify-content:space-evenly;
+
+}
+li{
+    width: 130px;
+    text-align: center;
+
+}
+li:hover
+{ color: black;
+background-color: lightcyan;
+border: 2px solid black;
+border-radius: 12px;
+cursor: pointer;
+}
+ 
+
+ #navv img
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -40;
+} 
+#navv
+{
+    position: relative;
+}
+
+/* Center Button */
+
+#centre h2
+{ 
+    text-shadow: yellow 2px 2px 2px ;
+    color:darkred
+    
+    
+}
+#centre{
+   display: flex; 
+   flex-direction: column;
+   flex-wrap: wrap;
+    
+text-align: center;
+justify-content:space-evenly;
+align-items: center;
+}
+#btn
+{      
+    border: 3px solid yellow;
+
+     width: 167px;
+    height: 56px;
+    font-size: 1.3rem;
+    background-color: green;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#btn:hover{
+    opacity: 0.7;
+    border:yellow 2px solid;
+    
+}
+#mid
+{ width: 50%;
+    margin: auto;
+    height:30%;
+     position: absolute;
+  top: 45%;
+  left: 25%;
+     /* z-index: 50;
+     top: 30vh;
+    left: 35vw; */
+     display: flex;
+     /* border: 3px solid yellow; */
+justify-content: center;
+   
+    }
+   
+  
+  
+  
+  
+    /* Our Service */
+   
+   #serve
+   {         
+max-width: 100%;
+
+      min-width: 90%;
+      margin: auto;
+      height:430px;
+    }
+    #serve h3
+    {  color: brown;
+        text-shadow: burlywood 3px 3px 2px ;
+        font-size: 2.3rem;
+text-align: center;
+padding: 18px 0px 18px 0px;
+
+
+    }
+   
+     #mid2 div{
+        /* position: relative; */
+        border: blue 2px solid;
+        border-radius: 10px;
+    margin: 15px;
+    background-color:#e2dbea;
+        min-height:90%;
+     max-height: 90%;
+        max-width: 33.33%;
+        min-width: 30%;
+        /* position: relative;  */
+                    display: flex;
+            flex-direction: column;
+            justify-content:space-evenly;
+            align-items: center;
+        flex-wrap: wrap;
+     }
+#mid2 div p{
+    text-align: center;
+    
+}
+
+    #mid2 div img {
+        max-width: 30%;
+    max-height: 30%;
+    min-width: 10%;
+    min-height: 10%;
+        
+    /* position: absolute;
+        top:45px;
+        left: 120px; */
+        border: blue 2px solid;
+        border-radius: 10px;
+        box-shadow: green 2px 2px 2px;
+    }
+
+   
+
+#mid2
+{  border: 3px solid brown;
+    box-shadow: 2.5px 2.5px 6px red;
+    border-radius: 20px;
+    display: flex;
+   /* flex-wrap: wrap; */
+   max-width: 90%;
+   
+   min-height:70%;
+   margin: auto; 
+     justify-content: center;
+   }
+
+@media screen and (min-width:800px) and (max-width:950px)
+{
+    #mid2
+    {
+        max-width: 100%;
+    }
+}
+     @media screen  and (max-width:630px) 
+{
+    #mid2 div p
+    {
+        font-size: 0.8rem;
+    }
+    #mid2 div h5
+    {
+        font-size: 18px;
+    }
+} 
+  #serve h5
+  {
+      font-size: 1.3rem;
+      text-shadow: chocolate 3px 3px 2px;
+      color: bisque;
+  }
+  
+  
+  
+  
+  /* Menu list */
+  #serve,#s
+  {
+      background-color: rgba(247, 230, 215, 0.979);
+      padding-bottom: 2rem;
+  
+  }
+  #sn
+{
+    border: 3px solid brown;
+    box-shadow: 2.5px 2.5px 6px red;
+    border-radius: 20px;
+    max-width: 90%;
+    /* height:60%; */
+    margin: auto;
+position: static;
+z-index: 60;
+}
+
+ #menuhead h3
+ { color: brown;
+    text-shadow: burlywood 3px 3px 2px ;
+    font-size: 2.3rem;
+height: 70px;
+text-align: center;
+padding-top: 18px;  
+ }
+ 
+
+ #seclassection div{
+     max-height: 200px;
+   max-width: 300px;
+   min-width: 30px;
+   min-height: 20px;
+    
+    border: 2px solid blue;
+   border-radius: 15px;
+    margin: 0.4rem;
+box-sizing: border-box;
+box-shadow: darkcyan 5px 5px 4px ;
+}
+
+#seclassection img{
+ height: 100%;
+  width: 100%;
+  border-radius: 13px; 
+  position: relative;
+    top:-116px;
+    z-index: 20;
+
+}
+#seclassection img:hover{
+    transform: rotateY(90deg);
+    transition-duration: 0.5s;
+    
+
+}
+#seclassection div:hover{
+    background-color: rgb(146, 218, 241);
+    transition-property: all;
+transition-duration: 2s;
+text-align: center;
+
+}
+input,textarea{
+    text-align: center;
+}
+#seclassection h3
+{
+    margin-top: 4.5rem;
+}
+#seclassection{
+
+    /* border: blue 2px solid; */
+    display: flex;
+    /* flex-direction: column; */
+    /* min-height: 50%; */
+    min-width:60%;
+    max-height: 80%;
+    max-width: 70%;
+    margin:auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content:space-around;
+padding-bottom: 2rem;
+
+
+
+}
+#last ,#almlast
+
+{
+    max-width: 90%;
+    margin: auto ;
+}
+picture
+{ display: flex;
+    flex-wrap: wrap;
+justify-content:center;
+}
+picture img{
+ 
+   max-width: 120px;
+    max-height: 95px;
+    padding: 1rem ;
+}
+picture img :hover{
+    transform:scaleX(2);
+}
+
+#almlast h2
+{
+    color: white;
+     text-shadow: brown 4px 4px 5px;
+
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 2rem;
+min-height: 65px;
+text-align: center;
+}
+
+#last h2
+{ 
+     color: white;
+     text-shadow: brown 4px 4px 5px;
+    margin-top: 1.6rem;
+    text-align: center;
+    font-size: 2rem;
+min-height: 65px;
+text-align: center;
+}
+#lastdes{
+/* {    margin-top: 2rem; */
+    background-color: grey;
+    padding:1rem ;
+/* opacity: .6; */
+}
+
+
+
+#bhailast 
+{  
+    text-shadow: slategrey 1px 1px 1px;
+    max-width: 80%;
+    margin: auto;
+   margin-top: 3rem;
+    display: flex;
+   flex-wrap: wrap;
+     justify-content:space-between ;
+    
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+max-height: 50rem;
+}
+#blf {
+    color:white
+}
+ #bls{
+
+    color:white
+
+ }
+ #blt{
+
+    color:white
+
+
+}
+ 
+
+#formpage
+{
+      /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 600px;
+ width: 80%;
+ margin: auto;
+ padding-top: 3rem;
+ /* justify-content: center; */
+ 
+}
+#formpage::before
+{
+ content: "";
+    position: absolute;
+    background-image: url(./pen.jpg);
+
+
+background-position: center;
+background-repeat: no-repeat;
+height:30rem ;
+width: 79vw;
+opacity: .8;
+}
+
+label , #btn
+{  color: whitesmoke;
+    /* font-size: 23px; */
+    position: static;
+    z-index: 8;
+    min-width: 50%;
+    max-width: 60%;
+    /* border: 2px solid blue; */
+    /* margin: auto; */
+ 
+}
+label input{
+width: 75%; 
+height: 110%;
+/* margin: auto; */
+margin-left: 1rem;
+
+}
+
+#btn #toll{
+    font-size: 13px;
+}
+
+textarea
+{   
+
+  width: 90%;
+    
+
+}
+label #sub
+{   background-color: sandybrown;
+   font-size: 16px;
+   font-weight: bold; color: navy;
+    border:1.3px solid brown ;
+    box-shadow: chocolate 3px 3px 3px;
+    border-radius: 5px;
+    min-width: 36%;
+    max-width: 24%;
+    height: 130%;
+    min-height:75% ;
+    margin-left:37%;
+}
+
+
+#copy
+{
+
+  text-align: center;
+    max-width: 100%;
+    margin: auto;
+
+    background-color:black;
+    color: white;
+}
+#s2
+{   position: static;
+    z-index: -8;
+    background-color: rgba(247, 230, 215, 0.979);
+    /* border: 2px solid blue  ; */
+    padding-bottom: 2rem;
+}

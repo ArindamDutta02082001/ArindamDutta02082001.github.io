@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Food Delivery Website</title>
+    <!-- <link rel="stylesheet" href="csspage.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet">
+
+<style>
+    
+/* CSS Reset */
+*
+{
+    margin: 0px;
+    padding: 0px;
+ 
+}
+
+
+
+
+html{
+    font-size: 20px;
+}
+
+
+/* Navigation abar */
+
+
+
+#navbar{
+/* border: 2px solid red; */
+position: relative;
+display: flex;
+justify-content: center;  
+font-family: 'Merriweather', serif;
+height: 595px;
+
+}
+#n
+{    scroll-behavior: smooth;
+    box-shadow: 3px 3px 3px yellow;
+      border-radius: 40px ;
+    position: fixed;
+    z-index: 100;
+   top: 40px;
+    background-color: red;
+    color: white;
+     min-height: 70px;
+border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+   align-items: center;
+   flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+li{
+    width: 120px;
+    text-align: center;
+
+}
+a{
+padding: 4px;
+    text-decoration: none;
+    color: yellow;
+}
+a:hover
+{ color: black;
+background-color: lightcyan;
+border: 2px solid black;
+border-radius: 12px;
+cursor: pointer;
+}
+ 
+
+ #navv img
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -40;
+} 
+#navv
+{
+    position: relative;
+}
+
+/* Center Button */
+
+#centre h2
+{ 
+    text-shadow: yellow 2px 2px 2px ;
+    color:darkred
+    
+    
+}
+#centre{
+   display: flex; 
+   flex-direction: column;
+   flex-wrap: wrap;
+    
+text-align: center;
+justify-content:space-evenly;
+align-items: center;
+}
+#btn
+{      
+    border: 3px solid yellow;
+
+     width: 167px;
+    height: 56px;
+    font-size: 1.3rem;
+    background-color: green;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#btn:hover{
+    opacity: 0.7;
+    border:yellow 2px solid;
+    
+}
+#mid
+{ width: 50%;
+    margin: auto;
+    height:30%;
+     position: absolute;
+  top: 45%;
+  left: 25%;
+     /* z-index: 50;
+     top: 30vh;
+    left: 35vw; */
+     display: flex;
+     /* border: 3px solid yellow; */
+justify-content: center;
+   
+    }
+   
+  
+  
+  
+  
+    /* Our Service */
+   
+   #serve
+   {         
+max-width: 100%;
+
+      min-width: 90%;
+      margin: auto;
+      height:430px;
+    }
+    #serve h3
+    {  color: brown;
+        text-shadow: burlywood 3px 3px 2px ;
+        font-size: 2.3rem;
+text-align: center;
+padding: 18px 0px 18px 0px;
+
+
+    }
+   
+     #mid2 div{
+        /* position: relative; */
+        border: blue 2px solid;
+        border-radius: 10px;
+    margin: 15px;
+    background-color:#e2dbea;
+        min-height:90%;
+     max-height: 90%;
+        max-width: 33.33%;
+        min-width: 30%;
+        /* position: relative;  */
+                    display: flex;
+            flex-direction: column;
+            justify-content:space-evenly;
+            align-items: center;
+        flex-wrap: wrap;
+     }
+#mid2 div p{
+    text-align: center;
+    
+}
+
+    #mid2 div img {
+        max-width: 30%;
+    max-height: 30%;
+    min-width: 10%;
+    min-height: 10%;
+        
+    /* position: absolute;
+        top:45px;
+        left: 120px; */
+        border: blue 2px solid;
+        border-radius: 10px;
+        box-shadow: green 2px 2px 2px;
+    }
+
+   
+
+#mid2
+{  border: 3px solid brown;
+    box-shadow: 2.5px 2.5px 6px red;
+    border-radius: 20px;
+    display: flex;
+   /* flex-wrap: wrap; */
+   max-width: 90%;
+   
+   min-height:70%;
+   margin: auto; 
+     justify-content: center;
+   }
+
+@media screen and (min-width:800px) and (max-width:950px)
+{
+    #mid2
+    {
+        max-width: 100%;
+    }
+}
+     @media screen  and (max-width:630px) 
+{
+   label #sub
+   {
+       min-width: 36%;
+       font-size: 5px;
+   }
+   .btn
+   {
+       font-size: 5px;
+   }
+    #mid2 div p
+    {
+        font-size: 0.8rem;
+    }
+    #mid2 div h5
+    {
+        font-size: 18px;
+    }
+} 
+  #serve h5
+  {
+      font-size: 1.3rem;
+      text-shadow: chocolate 3px 3px 2px;
+      color: bisque;
+  }
+  
+  
+  
+  
+  /* Menu list */
+  #serve,#s
+  {
+      background-color: rgba(247, 230, 215, 0.979);
+      padding-bottom: 2rem;
+  
+  }
+  #sn
+{
+    border: 3px solid brown;
+    box-shadow: 2.5px 2.5px 6px red;
+    border-radius: 20px;
+    max-width: 90%;
+    /* height:60%; */
+    margin: auto;
+position: static;
+z-index: 60;
+}
+
+ #menuhead h3
+ { color: brown;
+    text-shadow: burlywood 3px 3px 2px ;
+    font-size: 2.3rem;
+height: 70px;
+text-align: center;
+padding-top: 18px;  
+ }
+ 
+
+ #seclassection div{
+     max-height: 200px;
+   max-width: 300px;
+   min-width: 30px;
+   min-height: 20px;
+    
+    border: 2px solid blue;
+   border-radius: 15px;
+    margin: 0.4rem;
+box-sizing: border-box;
+box-shadow: darkcyan 5px 5px 4px ;
+}
+
+#seclassection img{
+ height: 100%;
+  width: 100%;
+  border-radius: 13px; 
+  position: relative;
+    top:-116px;
+    z-index: 20;
+
+}
+#seclassection img:hover{
+    transform: rotateY(90deg);
+    transition-duration: 0.5s;
+    
+
+}
+#seclassection div:hover{
+    background-color: rgb(146, 218, 241);
+    transition-property: all;
+transition-duration: 2s;
+text-align: center;
+
+}
+input,textarea{
+    text-align: center;
+}
+#seclassection h3
+{
+    margin-top: 4.5rem;
+}
+#seclassection{
+
+    /* border: blue 2px solid; */
+    display: flex;
+    /* flex-direction: column; */
+    /* min-height: 50%; */
+    min-width:60%;
+    max-height: 80%;
+    max-width: 70%;
+    margin:auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content:space-around;
+padding-bottom: 2rem;
+
+
+
+}
+#last ,#almlast
+
+{
+    max-width: 90%;
+    margin: auto ;
+}
+picture
+{ display: flex;
+    flex-wrap: wrap;
+justify-content:center;
+}
+picture img{
+ 
+   max-width: 120px;
+    max-height: 95px;
+    padding: 1rem ;
+}
+picture img :hover{
+    transform:scaleX(2);
+}
+
+#almlast h2
+{
+    color: white;
+     text-shadow: brown 4px 4px 5px;
+
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 2rem;
+min-height: 65px;
+text-align: center;
+}
+
+#last h2
+{ 
+     color: white;
+     text-shadow: brown 4px 4px 5px;
+    margin-top: 1.6rem;
+    text-align: center;
+    font-size: 2rem;
+min-height: 65px;
+text-align: center;
+}
+#lastdes{
+/* {    margin-top: 2rem; */
+    background-color: grey;
+    padding:1rem ;
+/* opacity: .6; */
+}
+
+
+
+#bhailast 
+{  
+    text-shadow: slategrey 1px 1px 1px;
+    max-width: 80%;
+    margin: auto;
+   margin-top: 3rem;
+    display: flex;
+   flex-wrap: wrap;
+     justify-content:space-between ;
+    
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+max-height: 50rem;
+}
+#blf {
+    color:white
+}
+ #bls{
+
+    color:white
+
+ }
+ #blt{
+
+    color:white
+
+
+}
+ 
+
+#formpage
+{
+      /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 600px;
+ width: 80%;
+ margin: auto;
+ padding-top: 3rem;
+ /* justify-content: center; */
+ 
+}
+#formpage::before
+{
+ content: "";
+    position: absolute;
+    background-image: url(./pen.jpg);
+
+
+background-position: center;
+background-repeat: no-repeat;
+height:30rem ;
+width: 79vw;
+opacity: .8;
+}
+
+label 
+{  color: whitesmoke;
+    /* font-size: 23px; */
+    position: static;
+    z-index: 8;
+    min-width: 50%;
+    max-width: 60%;
+    /* border: 2px solid blue; */
+    /* margin: auto; */
+ 
+}
+label input{
+width: 75%; 
+height: 110%;
+/* margin: auto; */
+margin-left: 1rem;
+
+}
+
+#btn #toll{
+    font-size: 13px;
+}
+
+textarea
+{   
+
+  width: 90%;
+    
+
+}
+label #sub
+{   background-color: sandybrown;
+   font-size: 16px;
+   font-weight: bold; color: navy;
+    border:1.3px solid brown ;
+    box-shadow: chocolate 3px 3px 3px;
+    border-radius: 5px;
+    min-width: 25%;
+    max-width: 25%;
+    height: 130%;
+    min-height:75% ;
+    margin-left:37%;
+}
+
+
+#copy
+{
+
+  text-align: center;
+    max-width: 100%;
+    margin: auto;
+
+    background-color:black;
+    color: white;
+}
+#s2
+{   position: static;
+    z-index: -8;
+    background-color: rgba(247, 230, 215, 0.979);
+    /* border: 2px solid blue  ; */
+    padding-bottom: 2rem;
+}
+.btn{
+    /* min-width: 50%; */
+   color:whitesmoke;
+    width: 30%;
+    position: static;
+    z-index: 8;
+}
+
+@media screen  and (max-width:530px) 
+{
+   label #sub
+   {
+       min-width: 36%;
+       font-size: 10px;
+   }
+   .btn 
+   {
+    height: 150px;
+       font-size: 5px;
+       min-width: 50%;
+    max-width: 60%;
+   }
+}
+</style>
+
+</head>
+<body>
+   <section id="navv">
+<img src="./bg2.jpg" alt="">
+       <div id="navbar">
+           <ul  type="none" id="n">
+               <li><a href="#serve"> Order Now </a></li>
+               <li><a href="#sn"> Menu </a> </li>
+            <li><a href="#serve"> Services</a> </li>
+            <li><a href="#bhailast"> Help </a></li>
+            <li><a href="#bhailast"> Contact Us</a></li>
+
+        </ul>
+        
+    </div>
+    
+    
+
+    <section id="mid">
+        
+      <div id="centre">
+       <h2>
+           Hungry! Get your Free Meal Now ...
+           
+        </h2>
+        <button id="btn">Order Now</button>
+    </div>
+</section>
+
+</section>
+
+
+
+
+<section id="serve">
+    <h3>Our Services</h3>
+    <div id="mid2">
+
+    <div id="box1"><h5>Order Here</h5>
+        <img src="./deliverlogo.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, sequi.</p>
+    </div>
+    <div id="box2">
+        <h5>Book A Table</h5>
+        <img src="./midlogo2.webp" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, deleniti.</p>
+    </div>
+    <div id="box3">
+        <h5>Bulk Ordering</h5>
+        <img src="./midlogo.webp" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, deleniti.</p>
+    </div>
+
+    </div>
+</section>
+
+
+<div id="s">
+<div id="sn">
+
+    
+    <div id="menuhead">
+        <h3>Our Menu List</h3>
+</div>
+<section id="seclassection">
+            <div id="t">
+                <h3>Thai</h3>
+                <img src="./thaif.jpg" alt="">
+            </div>
+                <div id="i">
+                    <h3>Indian</h3>
+                    <img src="./indf.jpg" alt="">
+                </div>
+                    <div id="c">
+                        <h3>Continental</h3>
+                        <img src="./conf.jpg" alt="">
+                    </div>
+               <div id="ch">
+                      <h3>Chinese</h3>
+                      <img src="./chif.webp" alt="">
+              </div>
+            <div id="a">
+                <h3>European</h3>
+                <img src="./amf.webp" alt="">
+            </div>
+            <div id="ar">    
+                <h3>Arabian</h3>
+        <img src="./arbf.webp" alt="">    
+        </div>
+        </section>
+        
+        
+        
+    </div>
+    </div>
+        
+<div id="s2">
+
+    
+<section id="formpage">
+    <label for="Name">
+       Name: <input type="text" placeholder="Enter your Name">
+    </label>
+    <label for="Email">
+        Email: <input type="email" placeholder="Enter your Email Id">
+     </label>
+     <label for="Phone">
+         Mobile: <input type="tel" placeholder="Enter your Mobile Number">
+        </label>
+     <label for="Query">
+      <textarea rows="10" cols="20" placeholder="Enter your Query here"></textarea>
+     </label>
+     <label for="Submit">
+         <input type="submit" id="sub">
+     </label>
+
+     
+     <button id="btn" class="btn">
+        <p> Call Us Now
+        </p>
+<p id="toll">Toll Free:0223-2347523</p> 
+</button>
+
+</section>
+
+</div>
+
+
+
+
+<div id="lastdes">
+
+    <section id="almlast">
+        <h2>Our Brand Partners</h2>
+    <picture>
+        
+        <img src="./logo1.png" alt="">
+        <img src="./logo2.png" alt="">
+        <img src="./flip.png" alt="">
+        <img src="./logo3.jpg" alt="">
+    </picture>
+        
+</section>
+
+
+
+
+<section id="last">
+    <h2>In Association With </h2>
+  <picture>
+      
+      <img src="./zom.png" alt="">
+      <img src="./logo4.png" alt="">
+      
+    </picture>
+      
+</section>
+
+
+
+
+<div id="bhailast">
+    <div id="blf">
+<h4>Contact Us</h4>
+<p>Bhedia , Burdwan</p>
+<p>Ausgram , Near Haattala</p>
+<p>pin 713126</p>
+<p>Ph:90xxxxxxx32/80xxxxxx64</p>
+
+<p>Tel:02543-4xxx6</p>
+
+    </div>
+    
+    <div id="bls">
+        <h4>Customer Care</h4>
+        <p>Tel:67111189/12000344</p>
+        <p>Email Us</p>
+        <p>arindamdutta02082001@gmail.com</p>
+        <p>Fax</p>
+        <p>123543636/474/64</p>
+        
+        <p>Tel:02543-4xxx6</p>
+    </div>
+    
+    <div id="blt">
+        <h4>Our Social Handles</h4>
+        <p>Follow Us on Facebook</p>
+        <p>Arindam_Dutta_2001</p>
+        <p>Follow Us on Instagram</p>
+        <p>arindam_dutta_2_0_0_1</p>
+        <p>Support Us By Liking Us</p>
+        
+        
+            </div>
+        
+
+</div>
+</div>
+
+
+
+
+
+<div> </div>    
+<div id="copy">
+    <h6>Copyright &COPY;  2019-2020  All Rights Reserved </h6>
+</div>
+</body>
+</html>
