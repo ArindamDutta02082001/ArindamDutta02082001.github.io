@@ -2,7 +2,7 @@ const E = require('express')
 const exp = new E()
 const fs = require('fs')
 exp.use(E.static('./public'))
-exp.get('/Home', (req, res) => {
+exp.get('/Index', (req, res) => {
   const t = fs.readFileSync('./Home.html', 'utf-8')
   res.end(t)
 })
