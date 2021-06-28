@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        form{
+            width: 60%;
+            margin: auto;
+            display:  flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        input{
+            margin: 1rem;
+            height:2rem;
+            text-align: center;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="/submit" method="POST">
+    <input type="text " name="Name" id="name" placeholder="Enter your name " width="1rem" height="2rem">
+    <input type="tel" name="Mobno" id="mobno" placeholder="Enter your Mobile No " width="60%" height="2rem" > 
+    <input type="submit" name="SubmitContact" id="Cont" >
+    </form>
+</body>
+</html>
