@@ -59,7 +59,7 @@ B1.addEventListener('click', () => {
       const d1 = new Date()
       st = d1.getTime()
     })
-    s.addEventListener('mouseleave', () => {
+    s.addEventListener('click', () => {
       const h = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F']
       let c = '#'
       for (let i = 0; i < 6; i++) {
