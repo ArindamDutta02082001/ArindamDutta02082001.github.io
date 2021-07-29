@@ -168,3 +168,8 @@ function change_n(ele)
     // this.style.visibility= 'hidden'
 // document.getElementById/
 }
+
+
+document.getElementById('print_btn').addEventListener('click',()=>{
+  window.print()
+})
